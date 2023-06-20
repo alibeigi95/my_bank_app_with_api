@@ -8,7 +8,7 @@ class RecordItem extends GetView<HomePageRecordListController> {
   const RecordItem({super.key, required this.record,required this.index,});
 
   final RecordViewModel record;
-  final int index;
+  final int index ;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class RecordItem extends GetView<HomePageRecordListController> {
       padding: const EdgeInsets.all(8.0),
       child: GestureDetector(
         onTap: () {
-          // controller.goToEditPage(index); TODO (ali)goto edit page
+           controller.goToEditPage(record.id);
         },
         child: DecoratedBox(
           decoration: BoxDecoration(

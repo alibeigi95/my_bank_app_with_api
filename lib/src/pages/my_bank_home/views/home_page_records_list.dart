@@ -25,7 +25,7 @@ class HomePageRecordsList extends GetView<HomePageRecordListController> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            // controller.goToAddPage();
+            controller.goToAddPage(context);
           },
           backgroundColor: Colors.green[300],
           child: const Icon(Icons.add, size: 35),
