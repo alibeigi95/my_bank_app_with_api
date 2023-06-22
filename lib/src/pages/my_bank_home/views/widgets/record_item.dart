@@ -16,7 +16,7 @@ class RecordItem extends GetView<HomePageRecordListController> {
       padding: const EdgeInsets.all(8.0),
       child: GestureDetector(
         onTap: () {
-           controller.goToEditPage(record.id);
+           controller.goToEditPage(record);
         },
         child: DecoratedBox(
           decoration: BoxDecoration(
@@ -70,41 +70,6 @@ class RecordItem extends GetView<HomePageRecordListController> {
     );
   }
 
-  Widget _recordTypeBadge(Color recordTypeColor, String recordType) =>
-      DecoratedBox(
-        decoration: BoxDecoration(
-            color: recordTypeColor.withOpacity(0.2),
-            borderRadius: BorderRadius.circular(4),
-            border: Border.all(color: recordTypeColor)),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-          child: Text(
-            recordType,
-            style: TextStyle(color: recordTypeColor),
-          ),
-        ),
-      );
-
-  Widget _recordAccountNameText() {
-    return Text(
-      record.account.name,
-      style: const TextStyle(
-          color: Colors.green,
-          fontSize: 18,
-          fontWeight: FontWeight.w500,
-          fontStyle: FontStyle.normal),
-    );
-  }
-
-  Widget _recordAmountText(String recordTypeSign, Color recordTypeColor) =>
-      Text(
-        '$recordTypeSign ${record.amount}',
-        style: TextStyle(
-            color: recordTypeColor,
-            fontSize: 22,
-            fontWeight: FontWeight.w400,
-            fontStyle: FontStyle.normal),
-      );
 
 
 }

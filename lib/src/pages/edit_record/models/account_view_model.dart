@@ -1,14 +1,15 @@
-class AccountViewModel {
+class EditAccountViewModel {
   final int id;
   final String name;
 
-  AccountViewModel({
+
+  EditAccountViewModel({
     required this.id,
     required this.name,
   });
 
-  factory AccountViewModel.fromJson(Map<String, dynamic> json) {
-    return AccountViewModel(
+  factory EditAccountViewModel.fromJson(Map<String, dynamic> json) {
+    return EditAccountViewModel(
       id: json['id'],
       name: json['name'],
     );

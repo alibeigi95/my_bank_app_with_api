@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_bank_app_network/src/pages/add_record/views/widgets/acount_selector.dart';
-
 import 'package:my_bank_app_network/src/pages/add_record/views/widgets/record_selector.dart';
-import '../../../infrastructure/theme/my_theme.dart';
 import '../controller/add_record_controller.dart';
 
 class AddRecord extends GetView<AddRecordController> {

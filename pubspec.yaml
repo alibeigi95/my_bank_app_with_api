@@ -30,6 +30,7 @@ environment:
 dependencies:
   get: ^4.6.5
   http: ^1.0.0
+  either_dart: ^1.0.0
   flutter:
     sdk: flutter
 

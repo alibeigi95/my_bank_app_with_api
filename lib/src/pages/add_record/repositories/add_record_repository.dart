@@ -25,8 +25,6 @@ class AddRecordRepository {
     return accounts;
   }
 
-
-
   Map<String, String> customHeaders = {"content-type": "application/json"};
   Future<int> addRecord({required AddRecordDto addRecordDto}) async {
     final url = Uri.http(_localhost(), 'record');

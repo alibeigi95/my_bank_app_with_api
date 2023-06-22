@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_bank_app_network/src/pages/edit_record/views/widgets/acount_selector.dart';
 import 'package:my_bank_app_network/src/pages/edit_record/views/widgets/record_selector.dart';
-import '../../../infrastructure/theme/my_theme.dart';
+
 import '../controller/edite_record_controller.dart';
 
 class EditRecord extends GetView<EditRecordController> {

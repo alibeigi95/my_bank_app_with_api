@@ -6,9 +6,9 @@ import '../../models/account_view_model.dart';
 
 
 class AccountSelectorItem extends StatelessWidget {
-  final AccountViewModel account;
-  final AccountViewModel groupAccount;
-  final void Function(AccountViewModel? account) onPressed;
+  final EditAccountViewModel account;
+  final EditAccountViewModel groupAccount;
+  final void Function(EditAccountViewModel? account) onPressed;
   const AccountSelectorItem({
     required this.account,
     required this.groupAccount,
